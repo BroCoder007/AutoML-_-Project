@@ -209,7 +209,8 @@ For Review 1, the following metrics are considered:
 * Weighted F1-score
 * Confusion Matrix
 
-The remaining five classification algorithms will be added for the final Review 2 comparison.
+The final Review 2 comparison now includes all ten classification algorithms, with weighted
+Precision, weighted Recall, weighted F1, and multiclass ROC-AUC (OvR) reported in one table.
 
 ---
 
@@ -406,7 +407,9 @@ gas-sensor-ml-capstone/
     └── ...
 ```
 
-The clustering notebook and final application components will be added as the project progresses toward Review 2.
+The Review 2 clustering notebook is available at `gas_sensor_ml_capstone/notebooks/clustering.ipynb`.
+It uses `data/pricerunner_aggreagte.csv`, fits K-Means and Agglomerative Hierarchical Clustering,
+reports the required validation metrics, and includes elbow, dendrogram, PCA, and t-SNE plots.
 
 ---
 

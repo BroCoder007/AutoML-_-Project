@@ -34,6 +34,21 @@ jupyter notebook notebooks
 
 Place `pricerunner_aggreagte.csv` in `data/` before running `clustering.ipynb`.
 
+## Bonus Streamlit App
+
+The optional gas-classification demo is in `app/app.py`. It loads the persisted model from
+`models/gas_classifier.joblib` and accepts either a CSV containing `Feature1` through
+`Feature128` or manual feature values.
+
+Run it locally from this directory:
+
+```powershell
+python src/train_app_model.py
+streamlit run app/app.py
+```
+
+For Streamlit Community Cloud, use `gas_sensor_ml_capstone/app/app.py` as the main file path.
+
 ## Team Responsibility
 
 - Regression: Team Member 1

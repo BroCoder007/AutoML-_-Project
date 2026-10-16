@@ -4,5 +4,6 @@ scikit-learn
 matplotlib
 seaborn
 jupyter
-streamlib
+scipy
 joblib
+streamlit

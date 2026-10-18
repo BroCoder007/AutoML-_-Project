@@ -36,14 +36,18 @@ Place `pricerunner_aggreagte.csv` in `data/` before running `clustering.ipynb`.
 
 ## Bonus Streamlit App
 
-The optional gas-classification demo is in `app/app.py`. It loads the persisted model from
-`models/gas_classifier.joblib` and accepts either a CSV containing `Feature1` through
-`Feature128` or manual feature values.
+The interactive demo in `app/app.py` now includes PM2.5 regression, product-title
+clustering, and gas classification. Regression starts with held-out weather
+examples or six editable inputs. Clustering assigns a title with K-Means or
+explores hierarchical groups. Classification loads saved sensor readings so the
+evaluator does not need to type 128 values. See [the app guide](app/README.md) for
+model details and evaluation limitations.
 
 Run it locally from this directory:
 
 ```powershell
 python src/train_app_model.py
+python src/train_demo_models.py
 streamlit run app/app.py
 ```
 
